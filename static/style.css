@@ -47,13 +47,14 @@
     font-size: 0.97rem;
     color: #7c5a36;
     margin-bottom: 2px;
+    padding: 8px 0; /* Added padding for list items */
+    border-bottom: 1px solid #eee; /* Added a subtle border between items */
 }
-/* Useless features styles */
 .useless-zone {
     margin-top: 18px;
     display: flex;
     gap: 10px;
-    justify-content: center;
+ justify-content: center;
 }
 #dontPressBtn, #shareBtn {
     background: #f7e6c4;
@@ -70,6 +71,7 @@
     background: #ffe6b3;
     color: #7c5a36;
 }
+/* Result and info styles */
 .useless-msg {
     margin-top: 10px;
     color: #b94a48;
@@ -95,12 +97,12 @@
     text-align: center;
     min-height: 22px;
 }
+/* Global and layout styles */
 body {
     background: #f7f0e6; /* Softer, uniform background */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Slightly updated font stack */
     margin: 0;
     padding: 0;
-    min-height: 100vh;
     display: flex;
     align-items: flex-start; /* Align to the top to show the leaderboard */
     justify-content: center;
@@ -117,7 +119,6 @@ html body {
     align-items: center;
     justify-content: center;
 }
-
 .app-card {
     width: 100%;
     max-width: 370px;
@@ -178,7 +179,6 @@ h1 {
     font-size: 1.8em; /* Slightly larger heading */
 }
 h2 {
-    font-size: 1.5em;
 }
 #uploadForm {
     width: 100%;
@@ -245,22 +245,31 @@ button:hover, button:focus {
     text-align: center;
     word-break: break-word;
 }
+/* Leaderboard specific styles */
+.leaderboard-container { /* New class for leaderboard wrapper in HTML */
+    margin: 30px auto;
+    max-width: 450px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    color: #555;
+    text-align: left;
+}
 .leaderboard-link {
-    display: inline-block; /* Make it a block element for margin */
-    margin-top: 20px; /* Add space above the link */
-    color: #a67c52; /* Use the theme color */
+ display: block; /* Make it a block element */
+    margin-top: 25px; /* More space above the link */
+    text-align: center; /* Center the link */
+    color: #7c5a36; /* Use a theme color */
     text-decoration: none; /* Remove default underline */
     font-weight: 500; /* Make it a bit bolder */
-    transition: color 0.2s ease; /* Smooth color transition on hover */
+    transition: color 0.2s ease, text-decoration 0.2s ease; /* Smooth transition */
 }
 .leaderboard-link:hover {
-    color: #7c5a36; /* Darker color on hover */
+    color: #a67c52; /* Change color on hover */
     text-decoration: underline; /* Add underline on hover */
 }
-#leaderboard-main-heading {
-    text-align: center; /* Center the main leaderboard heading */
-}
-#toasts-analyzed {
+/* General centering for leaderboard text elements */
     text-align: center; /* Center the "Toasts Analyzed" text */
     color: #7c5a36; /* Darker color */
     margin-top: 8px; /* Space below the main heading */
