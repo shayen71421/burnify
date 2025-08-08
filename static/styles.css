@@ -1,0 +1,215 @@
+/* /static/style.css */
+
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #181818 0%, #262626 100%);
+    color: #f1f1f1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card Container */
+.app-card {
+    background: rgba(28, 28, 28, 0.92);
+    border-radius: 18px;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.7);
+    border: 1.5px solid #222;
+    padding: 48px 24px;
+    max-width: 430px;
+    width: 100%;
+    position: relative;
+    transition: box-shadow 0.3s;
+}
+
+.app-card:hover {
+    box-shadow: 0 24px 58px rgba(0,0,0,0.8);
+}
+
+/* Card flip faces */
+.card-face {
+    display: none;
+    animation: fadeIn 0.6s;
+}
+.card-face.active {
+    display: block;
+}
+
+/* Title */
+h1, h2 {
+    font-size: 2.1rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+    background: linear-gradient(90deg, #fff, #ccc 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Icon */
+.toast-icon {
+    display: block;
+    margin: 0 auto 22px auto;
+    width: 64px;
+    height: auto;
+    filter: grayscale(100%) brightness(2);
+    opacity: 0.88;
+}
+
+/* Form and Inputs */
+#uploadForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="file"] {
+    background: #232323;
+    color: #f6f6f6;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 15px;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    outline: none;
+    transition: background 0.2s;
+}
+input[type="text"]:focus,
+input[type="file"]:focus {
+    background: #202020;
+}
+
+button[type="submit"],
+#dontPressBtn,
+#shareBtn,
+#backBtn {
+    background: #232323;
+    color: #eaeaea;
+    border: 1px solid #313131;
+    border-radius: 9px;
+    padding: 12px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    width: 100%;
+    transition: background 0.25s, color 0.15s;
+    margin-bottom: 9px;
+}
+button[type="submit"]:hover,
+#dontPressBtn:hover,
+#shareBtn:hover,
+#backBtn:hover {
+    background: #313131;
+    color: #fff;
+}
+
+/* Useless Zone */
+.useless-zone {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 10px;
+}
+
+.useless-msg {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 6px;
+    min-height: 22px;
+    letter-spacing: 0.5px;
+}
+
+/* Result & Feedback */
+.result {
+    padding: 14px 0 8px 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+
+.toast-mood {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    opacity: 0.95;
+}
+
+.toast-fact {
+    text-align: center;
+    color: #bdbdbd;
+    font-size: 0.98rem;
+    margin-bottom: 15px;
+}
+
+/* Toast Counter */
+.toast-counter {
+    text-align: center;
+    color: #b2b2b2;
+    padding: 10px 0 0 0;
+    font-size: 0.92rem;
+    opacity: 0.86;
+    margin-bottom: 10px;
+}
+
+/* Leaderboard Link */
+.leaderboard-link {
+    display: block;
+    color: #cccccc;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 26px;
+    opacity: 0.8;
+    font-size: 0.99rem;
+    transition: color 0.2s;
+}
+.leaderboard-link:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+/* Flip Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .app-card {
+        padding: 23px 8px;
+        max-width: 98vw;
+    }
+    h1, h2 {
+        font-size: 1.33rem;
+        margin-bottom: 13px;
+    }
+    .toast-icon {
+        width: 42px;
+        margin-bottom: 12px;
+    }
+    .useless-zone {
+        gap: 7px;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #222;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
