@@ -1,4 +1,6 @@
 
+print("Flask app starting...")
+
 from flask import Flask, request, jsonify, render_template
 import cv2
 import numpy as np
