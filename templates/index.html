@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Darkness Meter</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-card" id="appCard">
+        <div class="card-face card-front" id="cardFront">
+            <img src="/static/toast.svg" alt="Toast Icon" class="toast-icon">
+            <h1>Toast Darkness Meter</h1>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="text" id="userName" name="userName" placeholder="Your Name" maxlength="20" required>
+                <input type="file" id="toastImage" name="image" accept="image/png, image/jpeg" required>
+                <button type="submit">Upload & Get Toast Score</button>
+            </form>
+            <div class="useless-zone">
+                <button id="dontPressBtn" type="button">Don't Press Me!</button>
+                <button id="shareBtn" type="button">Share to Social Media</button>
+            </div>
+            <div id="uselessMsg" class="useless-msg"></div>
+            <div id="toastCounter" class="toast-counter">Toasts Analyzed: 0</div>
+            <a href="/leaderboard" class="leaderboard-link">View Leaderboard &rarr;</a>
+        </div>
+        <div class="card-face card-back" id="cardBack">
+            <img src="/static/toast.svg" alt="Toast Icon" class="toast-icon">
+            <h2 id="resultTitle">Result</h2>
+            <div id="toastMood" class="toast-mood"></div>
+            <!-- No image preview -->
+            <div id="result" class="result"></div>
+            <div id="toastFact" class="toast-fact"></div>
+            <button id="backBtn" type="button">Try Another</button>
+        </div>
+    </div>
+    <!-- Firebase JS SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>

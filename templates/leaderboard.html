@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Leaderboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-card">
+        <h1>Toast Leaderboard</h1>
+        <div id="toastCounter" class="toast-counter">Toasts Analyzed: ...</div>
+        <div id="brightestList"><strong>Brightest Toasts</strong><ul></ul></div>
+        <div id="darkestList"><strong>Darkest Toasts</strong><ul></ul></div>
+        <a href="/" class="back-link">&#8592; Back to Toast Meter</a>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="/static/leaderboard.js"></script>
+</body>
+</html>

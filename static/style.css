@@ -1,0 +1,237 @@
+.toast-image-preview {
+    margin: 10px auto 0 auto;
+    text-align: center;
+}
+.toast-image-preview img {
+    max-width: 120px;
+    max-height: 90px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(166,124,82,0.13);
+    margin-bottom: 6px;
+}
+#brightestList img, #darkestList img {
+    width: 32px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+.leaderboard {
+    margin-top: 18px;
+    background: #fffbe7;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(166,124,82,0.07);
+    padding: 12px 10px 10px 10px;
+    font-size: 0.98rem;
+    color: #a67c52;
+    text-align: center;
+}
+.leaderboard h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.08rem;
+    color: #a67c52;
+}
+#brightestList, #darkestList {
+    margin: 8px 0 0 0;
+    padding: 0;
+}
+#brightestList ul, #darkestList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#brightestList li, #darkestList li {
+    font-size: 0.97rem;
+    color: #7c5a36;
+    margin-bottom: 2px;
+}
+/* Useless features styles */
+.useless-zone {
+    margin-top: 18px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+#dontPressBtn, #shareBtn {
+    background: #f7e6c4;
+    color: #a67c52;
+    border: 1.5px solid #e2b97f;
+    border-radius: 8px;
+    font-size: 0.98rem;
+    font-weight: 500;
+    padding: 7px 14px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+#dontPressBtn:hover, #shareBtn:hover {
+    background: #ffe6b3;
+    color: #7c5a36;
+}
+.useless-msg {
+    margin-top: 10px;
+    color: #b94a48;
+    font-size: 0.98rem;
+    min-height: 18px;
+    text-align: center;
+}
+.toast-counter {
+    margin-top: 10px;
+    color: #a67c52;
+    font-size: 1.01rem;
+    text-align: center;
+}
+.toast-mood {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.toast-fact {
+    margin-top: 12px;
+    color: #7c5a36;
+    font-size: 1.01rem;
+    text-align: center;
+    min-height: 22px;
+}
+body {
+    background: linear-gradient(135deg, #fffbe7 0%, #f7e6c4 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-card {
+    width: 100%;
+    max-width: 370px;
+    min-height: 420px;
+    background: #fffbe7;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(166,124,82,0.10);
+    perspective: 1200px;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+}
+.app-card:active, .app-card:focus-within {
+    box-shadow: 0 8px 32px rgba(166,124,82,0.18);
+}
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 18px 24px 18px;
+    box-sizing: border-box;
+    transition: transform 0.7s cubic-bezier(.4,2,.6,1);
+}
+.card-front {
+    z-index: 2;
+    background: transparent;
+}
+.card-back {
+    transform: rotateY(180deg);
+    background: transparent;
+}
+.app-card.flipped .card-front {
+    transform: rotateY(-180deg);
+}
+.app-card.flipped .card-back {
+    transform: rotateY(0deg);
+    z-index: 3;
+}
+.toast-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 18px;
+    margin-top: 8px;
+}
+h1, h2 {
+    color: #a67c52;
+    margin-bottom: 18px;
+    margin-top: 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+#uploadForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type="file"] {
+    margin-bottom: 18px;
+    border: 1px solid #e2b97f;
+    border-radius: 8px;
+    padding: 8px;
+    background: #fff;
+    width: 100%;
+    max-width: 220px;
+    font-size: 1rem;
+}
+button {
+    background: linear-gradient(90deg, #a67c52 60%, #e2b97f 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(166,124,82,0.08);
+    margin-top: 8px;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+button:hover, button:focus {
+    background: linear-gradient(90deg, #7c5a36 60%, #e2b97f 100%);
+    box-shadow: 0 4px 16px rgba(166,124,82,0.13);
+}
+#backBtn {
+    margin-top: 28px;
+    background: #fff;
+    color: #a67c52;
+    border: 1.5px solid #e2b97f;
+    box-shadow: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+#backBtn:hover, #backBtn:focus {
+    background: #f7e6c4;
+    color: #7c5a36;
+}
+.result {
+    margin-top: 18px;
+    font-size: 1.15rem;
+    color: #333;
+    min-height: 40px;
+    text-align: center;
+    word-break: break-word;
+}
+@media (max-width: 500px) {
+    .app-card {
+        min-height: 370px;
+        max-width: 98vw;
+        border-radius: 12px;
+        padding: 0;
+    }
+    .card-face {
+        padding: 18px 6vw 18px 6vw;
+    }
+    .toast-icon {
+        width: 60px;
+        height: 60px;
+    }
+    h1, h2 {
+        font-size: 1.3rem;
+    }
+}
