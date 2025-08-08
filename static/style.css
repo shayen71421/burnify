@@ -18,28 +18,30 @@
     vertical-align: middle;
 }
 .leaderboard {
-    margin-top: 18px;
-    background: #fffbe7;
-    border-radius: 10px;
-    box-shadow: 0 1px 6px rgba(166,124,82,0.07);
-    padding: 12px 10px 10px 10px;
-    font-size: 0.98rem;
-    color: #a67c52;
-    text-align: center;
+ margin: 30px auto; /* Center the leaderboard and add top/bottom margin */
+    max-width: 450px; /* Give it a max width */
+    background: #ffffff; /* White background, similar to the app card */
+    border-radius: 16px; /* Consistent border radius with the app card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle but noticeable shadow */
+    padding: 25px; /* Increased padding */
+    color: #555; /* Darker text color for better readability */
+    text-align: left; /* Align text to the left */
 }
 .leaderboard h3 {
-    margin: 0 0 8px 0;
-    font-size: 1.08rem;
+    margin: 15px 0 10px 0; /* Add some space above and below subheadings */
+    font-size: 1.2rem; /* Slightly larger subheading font size */
     color: #a67c52;
+ font-weight: 600; /* Make subheadings a bit bolder */
 }
 #brightestList, #darkestList {
-    margin: 8px 0 0 0;
+    margin: 10px 0 20px 0; /* More space between lists */
     padding: 0;
 }
 #brightestList ul, #darkestList ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    line-height: 1.6; /* Increased line height for better readability */
 }
 #brightestList li, #darkestList li {
     font-size: 0.97rem;
@@ -94,6 +96,18 @@
     min-height: 22px;
 }
 body {
+    background: #f7f0e6; /* Softer, uniform background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Slightly updated font stack */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start; /* Align to the top to show the leaderboard */
+    justify-content: center;
+    padding-top: 30px; /* Add padding to the top of the body */
+    padding-bottom: 30px; /* Add padding to the bottom of the body */
+}
+html body {
  background: #f7f0e6; /* Softer, uniform background */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Slightly updated font stack */
     margin: 0;
@@ -231,12 +245,33 @@ button:hover, button:focus {
     text-align: center;
     word-break: break-word;
 }
+.leaderboard-link {
+    display: inline-block; /* Make it a block element for margin */
+    margin-top: 20px; /* Add space above the link */
+    color: #a67c52; /* Use the theme color */
+    text-decoration: none; /* Remove default underline */
+    font-weight: 500; /* Make it a bit bolder */
+    transition: color 0.2s ease; /* Smooth color transition on hover */
+}
+.leaderboard-link:hover {
+    color: #7c5a36; /* Darker color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+#leaderboard-main-heading {
+    text-align: center; /* Center the main leaderboard heading */
+}
+#toasts-analyzed {
+    text-align: center; /* Center the "Toasts Analyzed" text */
+    color: #7c5a36; /* Darker color */
+    margin-top: 8px; /* Space below the main heading */
+    font-size: 1rem; /* Consistent font size */
+}
 @media (max-width: 500px) {
     .app-card {
         min-height: 370px;
         max-width: 94vw; /* Slightly more padding on small screens */
         border-radius: 12px;
-        padding: 0;
+        padding: 0; 
     } /* Reduced border radius for smaller screens */
     .card-face {
         padding: 18px 6vw 18px 6vw;
