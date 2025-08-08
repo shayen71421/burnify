@@ -1,4 +1,4 @@
 flask
-opencv-python
+opencv-contrib-python-headless
 numpy
 werkzeug
