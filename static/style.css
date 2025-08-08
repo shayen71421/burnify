@@ -94,8 +94,8 @@
     min-height: 22px;
 }
 body {
-    background: linear-gradient(135deg, #fffbe7 0%, #f7e6c4 100%);
-    font-family: 'Segoe UI', Arial, sans-serif;
+ background: #f7f0e6; /* Softer, uniform background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Slightly updated font stack */
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -108,10 +108,10 @@ body {
     width: 100%;
     max-width: 370px;
     min-height: 420px;
-    background: #fffbe7;
+    background: #ffffff; /* White background for the card */
     border-radius: 20px;
-    box-shadow: 0 4px 24px rgba(166,124,82,0.10);
-    perspective: 1200px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+    perspective: 1000px; /* Slightly adjusted perspective */
     position: relative;
     overflow: hidden;
     transition: box-shadow 0.2s;
@@ -134,11 +134,11 @@ body {
 }
 .card-front {
     z-index: 2;
-    background: transparent;
+ background: #fff; /* White background for front face */
 }
 .card-back {
     transform: rotateY(180deg);
-    background: transparent;
+ background: #fff; /* White background for back face */
 }
 .app-card.flipped .card-front {
     transform: rotateY(-180deg);
@@ -150,8 +150,8 @@ body {
 .toast-icon {
     width: 80px;
     height: 80px;
-    margin-bottom: 18px;
-    margin-top: 8px;
+    margin-bottom: 24px; /* Increased margin */
+    margin-top: 12px; /* Adjusted margin */
 }
 h1, h2 {
     color: #a67c52;
@@ -160,22 +160,36 @@ h1, h2 {
     font-weight: 700;
     letter-spacing: 0.5px;
 }
+h1 {
+    font-size: 1.8em; /* Slightly larger heading */
+}
+h2 {
+    font-size: 1.5em;
+}
 #uploadForm {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+input[type="text"],
 input[type="file"] {
-    margin-bottom: 18px;
-    border: 1px solid #e2b97f;
-    border-radius: 8px;
-    padding: 8px;
-    background: #fff;
+    margin-bottom: 16px; /* Consistent spacing */
+    border: 1px solid #d3c1a3; /* Softer border color */
+    border-radius: 8px; /* Consistent border radius */
+    padding: 10px 12px; /* Increased padding */
+    background: #fcfcfc; /* Slightly off-white input background */
     width: 100%;
-    max-width: 220px;
+    max-width: 260px; /* Increased max-width */
     font-size: 1rem;
+    box-sizing: border-box; /* Include padding and border in element's total width */
+    color: #555;
 }
+
+input[type="text"]::placeholder {
+    color: #aaa;
+}
+
 button {
     background: linear-gradient(90deg, #a67c52 60%, #e2b97f 100%);
     color: #fff;
@@ -184,10 +198,10 @@ button {
     border-radius: 8px;
     font-size: 1.1rem;
     font-weight: 600;
-    cursor: pointer;
+    cursor: pointer; /* Indicate interactivity */
     box-shadow: 0 2px 8px rgba(166,124,82,0.08);
     margin-top: 8px;
-    transition: background 0.2s, box-shadow 0.2s;
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 button:hover, button:focus {
     background: linear-gradient(90deg, #7c5a36 60%, #e2b97f 100%);
@@ -196,14 +210,14 @@ button:hover, button:focus {
 #backBtn {
     margin-top: 28px;
     background: #fff;
-    color: #a67c52;
-    border: 1.5px solid #e2b97f;
-    box-shadow: none;
+    color: #7c5a36; /* Darker text for contrast */
+    border: 1px solid #d3c1a3; /* Consistent border style */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08); /* Subtle shadow */
     font-size: 1rem;
     font-weight: 500;
     padding: 10px 22px;
     border-radius: 8px;
-    transition: background 0.2s, color 0.2s;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 #backBtn:hover, #backBtn:focus {
     background: #f7e6c4;
@@ -220,10 +234,10 @@ button:hover, button:focus {
 @media (max-width: 500px) {
     .app-card {
         min-height: 370px;
-        max-width: 98vw;
+        max-width: 94vw; /* Slightly more padding on small screens */
         border-radius: 12px;
         padding: 0;
-    }
+    } /* Reduced border radius for smaller screens */
     .card-face {
         padding: 18px 6vw 18px 6vw;
     }

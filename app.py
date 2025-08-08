@@ -43,17 +43,15 @@ def analyze():
     if file.filename == '':
         return jsonify({'error': 'No selected file'}), 400
     if file and allowed_file(file.filename):
-        filename = secure_filename(file.filename)
-        filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-        file.save(filepath)
-        # Read image with OpenCV
-        img = cv2.imread(filepath)
+        # Read image directly from the file object in memory
+        npimg = np.frombuffer(file.read(), np.uint8)
+        img = cv2.imdecode(npimg, cv2.IMREAD_COLOR)
+
         if img is None:
             return jsonify({'error': 'Invalid image'}), 400
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         avg_brightness = int(np.mean(gray))
         rating = get_toast_rating(avg_brightness)
-        os.remove(filepath)
         return jsonify({'brightness': avg_brightness, 'rating': rating})
     else:
         return jsonify({'error': 'Invalid file type'}), 400
