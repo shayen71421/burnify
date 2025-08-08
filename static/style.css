@@ -22,10 +22,12 @@
     margin: 30px auto;
     max-width: 500px;
     background: #fefcf9;
+    /* box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08); */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     padding: 30px;
     color: #4a4a4a;
+    display: flex;
     text-align: center;
 }
 .leaderboard h3 {
@@ -35,6 +37,7 @@
     font-weight: 600;
 }
 #brightestList ul,
+#darkestList ul,
 #darkestList ul {
     list-style: none;
     padding: 0;
@@ -42,6 +45,12 @@
     line-height: 1.8;
 }
 #brightestList li,
+#darkestList li,
+#darkestList li {
+    font-size: 1rem;
+    color: #5a5a5a;
+    margin-bottom: 2px;
+    padding: 8px 0;
 #darkestList li {
     font-size: 1rem;
     color: #5a5a5a;
@@ -57,6 +66,12 @@
     border-bottom: none;
 }
 #brightestList span,
+#darkestList span,
+#darkestList span {
+    font-weight: 500;
+}
+#brightestList,
+#darkestList {
 #darkestList span {
     font-weight: 500;
 }
@@ -259,6 +274,12 @@ button:focus {
     font-size: 2em;
     margin-bottom: 10px;
     color: #a67c52;
+    width: 100%; /* Make the main title take full width */
+}
+.leaderboard-lists {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; /* Make the lists container take full width */
 }
 .leaderboard-container h3 {
     font-size: 1.2rem;
