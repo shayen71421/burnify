@@ -28,8 +28,6 @@ For Software:
 
 
 
-### Implementation
-For Software:
 
 # Installation
 
