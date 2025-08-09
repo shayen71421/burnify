@@ -19,17 +19,11 @@ People worldwide suffer from the eternal dilemma: Is my toast undercooked or jus
 Burnify swoops in like your breakfast superhero — armed with computer vision and a sharp sense of humor! Snap a pic of your toast, and Burnify’s cheeky algorithm scans every crumb to deliver an honest, hilarious toastiness verdict. No more guessing games or morning arguments — just pure, toasted truth served with a side of laughs. Because let’s face it, your toast deserves a rating as crispy as it is clever! 
 
 ## Technical Details
-### Technologies/Components Used
-For Software:
+Software Tools:
 - Python
 - Flask
 - OpenCV, Requests, Pillow
 - Vercel, Git, pip
-
-
-
-
-# Installation
 
 
 # Run
