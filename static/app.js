@@ -156,5 +156,6 @@ dontPressBtn.addEventListener('click', function() {
 });
 
 shareBtn.addEventListener('click', function() {
-    uselessMsg.textContent = "Feature coming soon! (Not really.)";
+    window.location.href = 'https://www.instagram.com/_.shayen_thomas._/';
 });
+
