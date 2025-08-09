@@ -36,6 +36,26 @@ For Software:
 
 # Run
 To run the project locally, execute the following command in your terminal:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/shayen71421/burnify
+   cd burnify
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the app:
+   ```bash
+   python app.py
+   ```
+
+4. Open your browser and navigate to:
+   ```
+   http://localhost:5000/
+   ```
 
 
 ### Project Documentation
