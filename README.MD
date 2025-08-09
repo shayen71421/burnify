@@ -21,23 +21,25 @@ Burnify swoops in like your breakfast superhero — armed with computer vision a
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- Python
+- Flask
+- OpenCV, Requests, Pillow
+- Vercel, Git, pip
 
 
 
 ### Implementation
 For Software:
+
 # Installation
-[commands]
+
 
 # Run
-[commands]
+To run the project locally, execute the following command in your terminal:
+
 
 ### Project Documentation
-For Software:
+
 
 # Screenshots (Add at least 3)
 ![alt text](image-1.png)
@@ -56,16 +58,12 @@ For Software:
 
 *burnt ot not result after sumbission*
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
 
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+https://drive.google.com/file/d/1KmC1QApS1KG-4d31p0UdhUMTJFYmo7Us/view?usp=drive_link
+*Video shows to use this useless thing to view the leaderboard and get into it*
 
 
 
