@@ -10,13 +10,13 @@
 
 
 ### Project Description
-[2-3 lines about what your project does]
+Burnify is a fun image-based tool that analyzes the darkness of toast from a photo and gives it a quirky rating — from “Lightly Kissed” to “Fully Carbonized.” It uses computer vision to measure toastiness with humor.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+People worldwide suffer from the eternal dilemma: Is my toast undercooked or just perfect? Without a universal toastiness standard, breakfasts are plagued by uncertainty, awkward debates, and slightly disappointing crunch levels. Burnify exists to end this crisis once and for all.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+Burnify swoops in like your breakfast superhero — armed with computer vision and a sharp sense of humor! Snap a pic of your toast, and Burnify’s cheeky algorithm scans every crumb to deliver an honest, hilarious toastiness verdict. No more guessing games or morning arguments — just pure, toasted truth served with a side of laughs. Because let’s face it, your toast deserves a rating as crispy as it is clever! 
 
 ## Technical Details
 ### Technologies/Components Used
@@ -26,10 +26,7 @@ For Software:
 - [Libraries used]
 - [Tools used]
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+
 
 ### Implementation
 For Software:
