@@ -40,10 +40,10 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![alt text](image-1.png)
+*shows the toast sumbit form(home page)*
 
-![Screenshot2]![alt text](image.png)
+![alt text](image.png)
 *shows leaderboard of crispiness*
 
 ![Screenshot3](Add screenshot 3 here with proper name)
