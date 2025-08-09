@@ -41,12 +41,19 @@ For Software:
 
 # Screenshots (Add at least 3)
 ![alt text](image-1.png)
+
+
 *shows the toast sumbit form(home page)*
 
+
 ![alt text](image.png)
+
+
 *shows leaderboard of crispiness*
 
 ![alt text](image-2.png)
+
+
 *burnt ot not result after sumbission*
 
 # Diagrams
