@@ -46,8 +46,8 @@ For Software:
 ![alt text](image.png)
 *shows leaderboard of crispiness*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![alt text](image-2.png)
+*burnt ot not result after sumbission*
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
